@@ -2,6 +2,9 @@
 
 Prototype project to create a Sign in / Sign up modal that will show two fields: user and password. This modal will interact with different brands in a larger company, so it should have different behaviors depending on the brand selected, and you should be able to switch brands with an URL parameter ("brand").
 
+## Initial definitions
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -20,41 +23,88 @@ You must have Apache Maven 3 or above installed, you can download it from [here]
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+To get a development env running you should follow the next steps:
 
-Say what the step will be
-
+1. Download or clone the git repository into your local machine.
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+[https://github.com/alexisdejesusdev/prototype-app.git](https://github.com/alexisdejesusdev/prototype-app.git)
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+2. Open the eclipse executable and import the maven project from the filesystem where it was downloaded or cloned.
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nMkpIcGdXRTFZRlU)
+```
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7ndFRMR1hHaFRVRkE)
+```
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nR2xERWJMNC05c2s)
+```
 
-## Running the tests
+3. The project will then appear as a maven project in the project explorer.
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nQmhWMTdDblF0dEE)
+```
+
+4. Right click the Servers view to add a new server.
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nUVJDWVVUSVJGdTA)
+```
+
+5. Select Apache -> Tomcat v8.0 Server and click next.
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nR3dMa0k2cHFqM28)
+```
+
+6. Select the Tomcat installation directory from the file system and click next.
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7ndFlDUGVUMDVvQU0)
+```
+
+7. Select the Tomcat installation directory from the file system and click next.
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7ndFlDUGVUMDVvQU0)
+```
+
+8. Select the prototype-app project, click Add > and then click Finish.
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nTlZnaFV6Vno3YzA)
+```
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nOXdWZTlON3BGOFE)
+```
+
+9. The project will appear on the servers view, click on the Tomcat v8.0 server name and click the Start Server button the server will start after that.
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7ncEpQM042aXlUWWM)
+```
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nOEpaVjFWS3pKVjQ)
+```
+
+10. Open the Chrome browser and enter to the following URL into the address bar. [http://localhost:8080/prototype-app/login.html?brand=Alpha&lan=en](http://localhost:8080/prototype-app/login.html?brand=Alpha&lan=en)
+```
+Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nWS12LVZXeWRkQXc)
+```
+
+## How to test the application
+The supported operations based on the initial requirements are the following:
+
+* Signing in as an Alpha brand, English language: [http://localhost:8080/prototype-app/login.html?brand=Alpha&lan=en](http://localhost:8080/prototype-app/login.html?brand=Alpha&lan=en)
+
+* Signing in as an Alpha brand, Spanish language: [http://localhost:8080/prototype-app/login.html?brand=Alpha&lan=es](http://localhost:8080/prototype-app/login.html?brand=Alpha&lan=es)
+
+* Signing in as a Beta brand, English language: [http://localhost:8080/prototype-app/login.html?brand=Beta&lan=en](http://localhost:8080/prototype-app/login.html?brand=Beta&lan=en)
+
+* Signing in as a Beta brand, Spanish language: [http://localhost:8080/prototype-app/login.html?brand=Beta&lan=es](http://localhost:8080/prototype-app/login.html?brand=Beta&lan=es)
+
+
+## Additional tests
 
 The test will automatically run while building the maven project, however you can find them in the folder: src/text/java. 
 
-### Break down into end to end tests
-
 The provided tests are just a reference of the main validations that the service layer performs, they're meant to exemplify how the full test will be done.  
 
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
@@ -62,30 +112,13 @@ Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Alexis De Jesús Bautista** - *Initial work* -
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is not licensed.
 
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
