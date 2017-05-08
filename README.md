@@ -2,7 +2,16 @@
 
 Prototype project to create a Sign in / Sign up modal that will show two fields: user and password. This modal will interact with different brands in a larger company, so it should have different behaviors depending on the brand selected, and you should be able to switch brands with an URL parameter ("brand").
 
-## Initial definitions
+## Project Architecture
+
+The project uses the following structure:
+
+Front-end:
+* webapp: This folder includes all the web resources used in the front-end.
+** css: Contains the following files, mostly separated to better find where to modify any style concerning the different components from the view:
+*** button.css
+*** modal.css
+*** style.css
 
 
 ## Getting Started
@@ -27,34 +36,47 @@ To get a development env running you should follow the next steps:
 [https://github.com/alexisdejesusdev/prototype-app.git](https://github.com/alexisdejesusdev/prototype-app.git)
 
 2. Open the eclipse executable and import the maven project from the filesystem where it was downloaded or cloned.
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nMkpIcGdXRTFZRlU)
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7ndFRMR1hHaFRVRkE)
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nR2xERWJMNC05c2s)
 
 3. The project will then appear as a maven project in the project explorer.
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nQmhWMTdDblF0dEE)
 
 4. Right click the Servers view to add a new server.
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nUVJDWVVUSVJGdTA)
 
 5. Select Apache -> Tomcat v8.0 Server and click next.
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nR3dMa0k2cHFqM28)
 
 6. Select the Tomcat installation directory from the file system and click next.
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7ndFlDUGVUMDVvQU0)
 
 7. Select the Tomcat installation directory from the file system and click next.
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7ndFlDUGVUMDVvQU0)
 
 8. Select the prototype-app project, click Add > and then click Finish.
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nTlZnaFV6Vno3YzA)
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nOXdWZTlON3BGOFE)
 
 9. The project will appear on the servers view, click on the Tomcat v8.0 server name and click the Start Server button the server will start after that.
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7ncEpQM042aXlUWWM)
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nOEpaVjFWS3pKVjQ)
 
 10. Open the Chrome browser and enter to the following URL into the address bar. [http://localhost:8080/prototype-app/login.html?brand=Alpha&lan=en](http://localhost:8080/prototype-app/login.html?brand=Alpha&lan=en)
+
 Image [here](https://drive.google.com/open?id=0B0VKN70UtF7nWS12LVZXeWRkQXc)
 
 ## How to test the application
