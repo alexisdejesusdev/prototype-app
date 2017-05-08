@@ -1,0 +1,44 @@
+<!-- Modal Sign In -->
+<div id="modalSignIn" class="modal" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-header"></div>
+		<div class="modal-body">
+			<!-- Username field-->
+			<div class="login-field">
+				<input type="text" id="username" title="username"
+					placeholder="{{placeholder.username}}" />
+			</div>
+			<!-- Password field-->
+			<div class="login-field">
+				<input type="password" id="password" title="password"
+					placeholder="{{placeholder.password}}" />
+			</div>
+			<div class="actions-container">
+				<!-- Remember me field-->
+				<div class="remember-container">
+					<input type="checkbox" name="remember" title="remember" /> <span>{{label.remember}}</span>
+				</div>
+				<!-- Forgot password link-->
+				<div class="forgot-container">
+					<a href="#modalSignIn" onclick="underConstruction();"><span>{{label.forgot}}</span></a>
+				</div>
+			</div>
+			<!-- Error container -->
+			<div id="sign-in-errors" class="server-error"></div>
+			<!-- Sign In button  -->
+			<div class="submit-action">
+				<a href="#modalSignIn" class="btn btn-big" onclick="signIn();">{{button.signIn.submit}}</a>
+			</div>
+		</div>
+		<div class="modal-footer">
+			<div class="no-account-container">
+				<span>{{label.noAccount}}</span>
+			</div>
+			<!-- Sign Up link  -->
+			<div class="sign-up-container">
+				<a href="#modalSignUp"><span>{{label.signUp}}</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal Sign In Ends -->

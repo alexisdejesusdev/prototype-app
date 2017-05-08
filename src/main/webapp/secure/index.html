@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Index</title>
+
+<!-- Include style sheets -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/button.css">
+
+<!-- Import external libraries -->
+<script type="text/javascript" src="../js/lib/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../js/lib/jquery.i18n.properties.min.js"></script>
+
+<!-- Import custom libraries -->
+<script type="text/javascript" src="../js/utils.js"></script>
+
+</head>
+<body onload="populateIndexPage();">
+
+	<div id="wrap" class="wrap">
+		<!-- Sign In success header -->
+		<h2>{{label.signIn.success}}</h2>
+
+		<!-- Go back button -->
+		<a href="#" class="btn" onclick="window.history.back();">{{button.goback}}</a>
+	</div>
+
+</body>
+</html>

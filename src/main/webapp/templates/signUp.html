@@ -1,0 +1,36 @@
+<!-- Modal Sign Up -->
+<div id="modalSignUp" class="modal" aria-hidden="true">
+	<div class="modal-dialog">
+		<!-- Sign Up header -->
+		<div class="modal-header">
+			<h2>{{header.signUp}}</h2>
+		</div>
+		<div class="modal-body">
+			<!-- Username field-->
+			<div class="login-field">
+				<input type="text" id="newUsername" title="newUsername"
+					placeholder="{{placeholder.username}}" />
+			</div>
+			<!-- Password field-->
+			<div class="login-field">
+				<input type="password" id="newPassword" title="newPassword"
+					placeholder="{{placeholder.password}}" />
+			</div>
+			<!-- Terms Accepted field-->
+			<div class="terms-field">
+				<div>{{label.terms}}</div>
+				<div id="terms-error-msg">{{error.terms}}</div>
+				<input type="checkbox" id="termsAccepted" title="termsAccepted"
+					onclick="toggleValidationMessage(this, 'terms-error-msg')" />
+			</div>
+			<!-- Error container -->
+			<div id="sign-up-errors" class="server-error"></div>
+			<!-- Sign Up button  -->
+			<div class="submit-action">
+				<a href="#modalSignUp" class="btn btn-big" onclick="signUp();">{{button.signUp.submit}}</a>
+			</div>
+		</div>
+		<div class="modal-footer"></div>
+	</div>
+</div>
+<!-- Modal Sign Up Ends -->
