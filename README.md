@@ -8,10 +8,10 @@ The project uses the following structure:
 
 Front-end:
 * webapp: This folder includes all the web resources used in the front-end.
-** css: Contains the following files, mostly separated to better find where to modify any style concerning the different components from the view:
-*** button.css
-*** modal.css
-*** style.css
+ * css: Contains the following files, mostly separated to better find where to modify any style concerning the different components from the view:
+  * button.css
+  * modal.css
+  * style.css
 
 
 ## Getting Started
